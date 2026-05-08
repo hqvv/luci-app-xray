@@ -274,9 +274,6 @@ function gen_config() {
             place: "holder"
         } : null,
         observatory: observatory(general, manual_tproxy),
-        reverse: {
-            bridges: bridges(bridge)
-        },
         routing: {
             domainStrategy: general["routing_domain_strategy"] || "AsIs",
             rules: rules(general, bridge, manual_tproxy, extra_inbound, fakedns),
